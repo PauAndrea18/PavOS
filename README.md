@@ -40,4 +40,4 @@ PavOS es un sistema operativo ligero basado en el kernel de Linux, diseñado par
 - Novedades: Esta versión inicial de PavOS incluye las herramientas básicas de línea de comandos para un funcionamiento eficiente en entornos de máquinas virtuales.
 
 ## Contacto y soporte
-Para obtener ayuda o informar de problemas, contacta con nuestro equipo de soporte en [pavos.contact@gmail.com](mailto:pavos.contact@gmail.com).
+Para obtener ayuda o informar de problemas, contacta con nuestro equipo de soporte en <span style="color:blue;">pavos.contact@gmail.com</span>.
