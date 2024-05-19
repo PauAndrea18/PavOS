@@ -1,4 +1,4 @@
-# PavOS \n*Sistema Operativo basado en el kernel de Linux*
+# PavOS <br>*Sistema Operativo basado en el kernel de Linux*
 
 ## Especificaciones mínimas
 - Procesador: 1 GHz o superior
