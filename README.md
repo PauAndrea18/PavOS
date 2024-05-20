@@ -73,8 +73,23 @@ CalculadoraTotazoPro está implementada en el lenguaje de programación C y cons
 Para compilar CalculadoraTotazoPro, ejecute el siguiente comando:
 
 ```bash
-gcc -o calculadoratotazopro calculadoratotazopro.c -lpthread
+gcc -o calculadoratotazopro calculadoratotazopro.c
 ```
+
+Una vez compilado, mueva el archivo ejecutable al directorio /usr/bin para poder ejecutarlo como un comando del sistema operativo:
+
+```bash
+sudo mv calculadoratotazopro /usr/bin/
+```
+
+Para ejecutar la calculadora:
+
+```bash
+calculadoratotazopro
+```
+
+Presione Enter para continuar con la ejecución y digite la operación que desea realizar. Para salir de la calculadora, presione `Ctrl+C`.
+
 
 ## MimiBlocks
 MimiBlocks es un editor de archivos txt con las siguientes características:
