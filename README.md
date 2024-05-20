@@ -42,6 +42,7 @@ PavOS es un sistema operativo ligero basado en el kernel de Linux, diseñado par
 ## Contacto y soporte
 Para obtener ayuda o informar de problemas, contacta con nuestro equipo de soporte en pavos.contact@gmail.com.
 
+<br>
 
 # *Aplicaciones Incluidas*
 
@@ -57,8 +58,7 @@ CalculadoraTotazoPro es una calculadora avanzada capaz de realizar las siguiente
 La calculadora tiene en cuenta la jerarquía de operadores, asegurando que las operaciones se realicen en el orden correcto.
 
 ### Desarrollo de CalculadoraTotazoPro
-
-CalculadoraTotazoPro está implementada en el lenguaje de programación C y consta de varios métodos esenciales para su funcionamiento. 
+CalculadoraTotazoPro está implementada en el lenguaje de programación C y consta de varios métodos esenciales para su funcionamiento: 
 
 - **Método `obtenerSigToken`:** se encarga de leer la siguiente porción de la expresión matemática ingresada por el usuario. Esta porción puede ser un número o un operador. Para números, maneja tanto los decimales, convirtiendo comas a puntos, como los porcentajes, dividiendo el número entre 100 si se encuentra un símbolo de porcentaje. Para operadores, identifica el carácter correspondiente. Este método se asegura de ignorar los espacios en blanco y finaliza cuando alcanza el final de la línea o de la cadena.
 
@@ -88,7 +88,8 @@ Para ejecutar la calculadora:
 calculadoratotazopro
 ```
 
-Presione Enter para continuar con la ejecución y digite la operación que desea realizar. Para salir de la calculadora, presione `Ctrl+C`.
+Presione Enter para continuar con la ejecución y digite la operación que desea realizar.
+Para salir de la calculadora, presione `Ctrl+C`.
 
 
 ## MimiBlocks
@@ -102,4 +103,35 @@ MimiBlocks es un editor de archivos txt con las siguientes características:
   - Si el archivo existe, permite editar su contenido.
   - Si el archivo no existe, lo crea para su edición.
 
+### Desarrollo de MimiBlocks
+MimiBlocks está implementado en el lenguaje de programación C utilizando la biblioteca `ncurses` para la manipulación de la interfaz de usuario en la terminal y consta de varios métodos esenciales para su funcionamiento:  
 
+- **Método `save_text`:** guarda el contenido del archivo editado. Recorre la lista de nodos que representan el contenido del archivo y escribe cada carácter en el archivo especificado. El método read_text lee el contenido de un archivo txt y lo almacena en una lista doblemente enlazada de nodos, donde cada nodo representa un carácter del archivo junto con sus coordenadas en la pantalla. Si el archivo no existe, lo crea.
+
+- **Método `encontrar_node`:** busca un nodo específico en la lista enlazada basado en las coordenadas y y x. Dependiendo del valor de opc, busca hacia adelante o hacia atrás en la lista. modificar_x y modificar_y ajustan las coordenadas x e y de los nodos en la lista cuando se insertan o eliminan caracteres, asegurando que la representación del texto en pantalla sea correcta.
+
+- **Método `main`:** es la función principal que inicializa el entorno ncurses y controla el flujo del editor de texto. Lee el archivo inicial en una lista de nodos, muestra el contenido en la pantalla y permite al usuario navegar y modificar el texto. El bucle principal captura las teclas de entrada y realiza las acciones correspondientes, como moverse por el texto, insertar caracteres, y guardar o cancelar los cambios. Cuando el usuario presiona Esc, el texto se guarda y el programa termina. Si presiona Ctrl+C, el programa termina sin guardar los cambios.
+
+### Compilación y Ejecución
+Para compilar MimiBlocks, ejecute el siguiente comando:
+
+```bash
+gcc -o mimiblocks mimiblocks.c -lncurses
+```
+
+Una vez compilado, mueva el archivo ejecutable al directorio /usr/bin para poder ejecutarlo como un comando del sistema operativo:
+
+```bash
+sudo mv mimiblocks /usr/bin/
+```
+
+Para ejecutar el editor, recuerde que debe tener como parametro el nombre del archivo txt que se desea editar:
+
+```bash
+mimiblocks <nombre de archivo>.txt
+```
+
+Para salir del editor y guardar los cambios, presione Esc.
+Para salir sin guardar, presione Ctrl+C.
+
+¡Disfruta de la funcionalidad de PavOS con CalculadoraTotazoPro y MimiBlocks!
