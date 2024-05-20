@@ -47,7 +47,7 @@ Para obtener ayuda o informar de problemas, contacta con nuestro equipo de sopor
 # *Aplicaciones Incluidas*
 
 ## CalculadoraTotazoPro
-CalculadoraTotazoPro es una calculadora avanzada capaz de realizar las siguientes operaciones:
+CalculadoraTotazoPro es una calculadora capaz de realizar las siguientes operaciones:
 
 - Suma
 - Resta
@@ -131,7 +131,7 @@ Para ejecutar el editor, recuerde que debe tener como parametro el nombre del ar
 mimiblocks <nombre de archivo>.txt
 ```
 
-Para salir del editor y guardar los cambios, presione Esc.
+Para salir del editor y guardar los cambios, presione Esc. <br>
 Para salir sin guardar, presione Ctrl+C.
 
-¡Disfruta de la funcionalidad de PavOS con CalculadoraTotazoPro y MimiBlocks!
+*¡Disfruta de la funcionalidad de PavOS con CalculadoraTotazoPro y MimiBlocks!*
