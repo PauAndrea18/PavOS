@@ -43,13 +43,9 @@ PavOS es un sistema operativo ligero basado en el kernel de Linux, diseñado par
 Para obtener ayuda o informar de problemas, contacta con nuestro equipo de soporte en pavos.contact@gmail.com.
 
 
-# PavOS
+# *Aplicaciones Incluidas*
 
-PavOS es un sistema operativo que incluye dos aplicaciones principales:
-
-## Aplicaciones Incluidas
-
-### CalculadoraTotazoPro
+## CalculadoraTotazoPro
 CalculadoraTotazoPro es una calculadora avanzada capaz de realizar las siguientes operaciones:
 
 - Suma
@@ -60,24 +56,7 @@ CalculadoraTotazoPro es una calculadora avanzada capaz de realizar las siguiente
 
 La calculadora tiene en cuenta la jerarquía de operadores, asegurando que las operaciones se realicen en el orden correcto.
 
-### MimiBlocks
-MimiBlocks es un editor de archivos txt con las siguientes características:
-
-- Permite el desplazamiento en el texto.
-- Permite la edición del texto.
-- Para guardar los cambios realizados, presione la tecla `Esc`.
-- Para cancelar la edición, presione `Ctrl+C`.
-- Recibe como parámetro el nombre del archivo a editar.
-  - Si el archivo existe, permite editar su contenido.
-  - Si el archivo no existe, lo crea para su edición.
-
-## Requisitos del Sistema
-
-Para ejecutar PavOS y sus aplicaciones incluidas, se recomienda contar con las siguientes especificaciones mínimas:
-
-- Espacio en disco: 10GB
-
-## Desarrollo de CalculadoraTotazoPro
+### Desarrollo de CalculadoraTotazoPro
 
 CalculadoraTotazoPro está implementada en el lenguaje de programación C y consta de varios métodos esenciales para su funcionamiento. El método `obtenerSigToken` se encarga de leer la siguiente porción de la expresión matemática ingresada por el usuario. Esta porción puede ser un número o un operador. Para números, maneja tanto los decimales, convirtiendo comas a puntos, como los porcentajes, dividiendo el número entre 100 si se encuentra un símbolo de porcentaje. Para operadores, identifica el carácter correspondiente. Este método se asegura de ignorar los espacios en blanco y finaliza cuando alcanza el final de la línea o de la cadena.
 
@@ -94,3 +73,16 @@ Para compilar CalculadoraTotazoPro, ejecute el siguiente comando:
 ```bash
 gcc -o calculadoratotazopro calculadoratotazopro.c -lpthread
 ```
+
+## MimiBlocks
+MimiBlocks es un editor de archivos txt con las siguientes características:
+
+- Permite el desplazamiento en el texto.
+- Permite la edición del texto.
+- Para guardar los cambios realizados, presione la tecla `Esc`.
+- Para cancelar la edición, presione `Ctrl+C`.
+- Recibe como parámetro el nombre del archivo a editar.
+  - Si el archivo existe, permite editar su contenido.
+  - Si el archivo no existe, lo crea para su edición.
+
+
