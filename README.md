@@ -41,3 +41,56 @@ PavOS es un sistema operativo ligero basado en el kernel de Linux, diseñado par
 
 ## Contacto y soporte
 Para obtener ayuda o informar de problemas, contacta con nuestro equipo de soporte en pavos.contact@gmail.com.
+
+
+# PavOS
+
+PavOS es un sistema operativo que incluye dos aplicaciones principales:
+
+## Aplicaciones Incluidas
+
+### CalculadoraTotazoPro
+CalculadoraTotazoPro es una calculadora avanzada capaz de realizar las siguientes operaciones:
+
+- Suma
+- Resta
+- Multiplicación
+- División
+- Porcentajes
+
+La calculadora tiene en cuenta la jerarquía de operadores, asegurando que las operaciones se realicen en el orden correcto.
+
+### MimiBlocks
+MimiBlocks es un editor de archivos txt con las siguientes características:
+
+- Permite el desplazamiento en el texto.
+- Permite la edición del texto.
+- Para guardar los cambios realizados, presione la tecla `Esc`.
+- Para cancelar la edición, presione `Ctrl+C`.
+- Recibe como parámetro el nombre del archivo a editar.
+  - Si el archivo existe, permite editar su contenido.
+  - Si el archivo no existe, lo crea para su edición.
+
+## Requisitos del Sistema
+
+Para ejecutar PavOS y sus aplicaciones incluidas, se recomienda contar con las siguientes especificaciones mínimas:
+
+- Espacio en disco: 10GB
+
+## Desarrollo de CalculadoraTotazoPro
+
+CalculadoraTotazoPro está implementada en el lenguaje de programación C y consta de varios métodos esenciales para su funcionamiento. El método `obtenerSigToken` se encarga de leer la siguiente porción de la expresión matemática ingresada por el usuario. Esta porción puede ser un número o un operador. Para números, maneja tanto los decimales, convirtiendo comas a puntos, como los porcentajes, dividiendo el número entre 100 si se encuentra un símbolo de porcentaje. Para operadores, identifica el carácter correspondiente. Este método se asegura de ignorar los espacios en blanco y finaliza cuando alcanza el final de la línea o de la cadena.
+
+El método `evaluarExpresion` es el núcleo de la calculadora, encargado de evaluar la expresión matemática completa. Utiliza una pila para manejar la jerarquía de operadores, almacenando temporalmente números y operadores hasta que se pueda resolver la expresión correctamente. Comienza verificando que la expresión inicie con un número válido, luego procede a evaluar operadores y operandos en secuencia, realizando las operaciones aritméticas básicas (suma, resta, multiplicación, división) de acuerdo con la precedencia de operadores. Si encuentra errores como operadores consecutivos o división por cero, muestra un mensaje de error y termina la ejecución.
+
+El método `limpiarBuffer` se utiliza para preparar la entrada del usuario, asegurándose de que no queden caracteres residuales en el buffer de entrada estándar (stdin) que puedan interferir con la lectura de una nueva expresión.
+
+Finalmente, el método `main` es la función principal que controla el flujo de la calculadora. Al iniciar, muestra un mensaje de bienvenida y entra en un bucle infinito donde espera a que el usuario presione Enter para ingresar una operación. Luego lee la expresión matemática ingresada, la evalúa utilizando `evaluarExpresion` y muestra el resultado. Para salir de la calculadora, el usuario debe presionar Ctrl+C, lo que termina la ejecución del programa.
+
+### Compilación y Ejecución
+
+Para compilar CalculadoraTotazoPro, ejecute el siguiente comando:
+
+```bash
+gcc -o calculadoratotazopro calculadoratotazopro.c -lpthread
+```
