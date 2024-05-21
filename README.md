@@ -6,7 +6,7 @@
 - Espacio en disco: 10 GB o más 
 
 ## Descripción
-PavOS es un sistema operativo ligero basado en el kernel de Linux, diseñado para funcionar en entornos de máquinas virtuales. Este sistema operativo se ejecuta exclusivamente por consola, ofreciendo un enfoque minimalista y eficiente.
+PavOS es un sistema operativo ligero basado en el kernel de Linux, diseñado para funcionar en entornos de máquinas virtuales. Este sistema operativo se ejecuta exclusivamente por consola, ofreciendo un enfoque minimalista y eficiente. PavOS incluye soporte completo para drivers de USB, lo que permite la conexión y el uso de dispositivos USB de manera fluida y sin complicaciones. Además, PavOS permite la conexión remota mediante el protocolo SSH (Secure Shell), facilitando la administración y el acceso seguro desde cualquier lugar. 
 
 ## Instrucciones de uso
 1. *Descarga del ISO:* Descarga el archivo ISO de PavOS desde [enlace de descarga].
