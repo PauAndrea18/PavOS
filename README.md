@@ -46,6 +46,8 @@ Para obtener ayuda o informar de problemas, contacta con nuestro equipo de sopor
 
 # *Aplicaciones Incluidas*
 
+Para PavOS se han desarrollado dos aplicaciones destacadas que se pueden ejecutar directamente desde la consola, aportando diferentes funcionalidades y mejorando la experiencia de usuario al utilizar este sistema operativo. Estas aplicaciones han sido diseñadas con el din de ofrecer herramientas esenciales que aumentan la productividad y eficiencia de PavOS. Gracias a su ejecución por consola, estas aplicaciones aseguran un rendimiento rápido y sin distracciones, alineándose con el enfoque minimalista y eficiente de PavOS.
+
 ## CalculadoraTotazoPro
 CalculadoraTotazoPro es una calculadora capaz de realizar las siguientes operaciones:
 
