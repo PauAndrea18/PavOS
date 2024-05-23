@@ -9,34 +9,28 @@
 PavOS es un sistema operativo ligero basado en el kernel de Linux, diseñado para funcionar en entornos de máquinas virtuales. Este sistema operativo se ejecuta exclusivamente por consola, ofreciendo un enfoque minimalista y eficiente. PavOS incluye soporte completo para drivers de USB, lo que permite la conexión y el uso de dispositivos USB de manera fluida y sin complicaciones. Además, PavOS permite la conexión remota mediante el protocolo SSH (Secure Shell), facilitando la administración y el acceso seguro desde cualquier lugar. 
 
 ## Instrucciones de uso
-1. *Descarga del ISO:* Descarga el archivo ISO de PavOS desde [enlace de descarga].
 
-2. *Creación de una nueva máquina virtual:*
-   - Abre VM VirtualBox y haz clic en el botón "Nueva" en la parte superior.
-   - Ingresa un nombre para tu máquina virtual (por ejemplo, "PavOS") y selecciona el tipo de sistema operativo como "Linux".
-   - Elige la versión adecuada de Linux en la lista desplegable (Gentoo).
-   - Selecciona la cantidad de memoria RAM que deseas asignar a la máquina virtual.
-   - Crea un disco duro virtual con un tamaño mínimo de 10 GB y elige el tipo adecuado según tus preferencias y recursos disponibles.
+### Paso 1: Descargar e Instalar VirtualBox
+1. *Descargar VirtualBox:* Ve al sitio oficial de VirtualBox (https://www.virtualbox.org/wiki/Downloads) y descarga la versión correspondiente a tu sistema operativo (Windows, macOS, Linux).
+2. *Instalar VirtualBox:* Ejecuta el archivo descargado y sigue las instrucciones del instalador para completar la instalación.
 
-3. *Configuración de la máquina virtual:*
-   - En la configuración de la máquina virtual, en la sección "Almacenamiento", selecciona el controlador de SATA y haz clic en el icono del disco duro.
-   - Selecciona "Elegir un archivo de disco óptico virtual" y busca el archivo ISO de PavOS que descargaste anteriormente.
+### Paso 2: Importar el Archivo .ova
+1. *Abrir VirtualBox:* Inicia VirtualBox desde el menú de inicio (Windows) o desde tu carpeta de aplicaciones (macOS, Linux).
+Acceder al Asistente de Importación: Haz clic en Archivo en la barra de menú y selecciona Importar servicio virtualizado....
+2. *Seleccionar el Archivo .ova:*
+- En la ventana del Asistente de Importación, haz clic en el icono de la carpeta para abrir el explorador de archivos.
+- Navega hasta la ubicación del archivo .ova en tu sistema, selecciona el archivo y haz clic en Abrir.
+3. *Iniciar la Importación:*
+- Después de seleccionar el archivo .ova, haz clic en Siguiente.
+- Revisa la configuración de la máquina virtual que se mostrará. Puedes ajustar los parámetros según tus necesidades.
+- Haz clic en Importar para comenzar el proceso de importación. Este proceso puede tardar varios minutos, dependiendo del tamaño del archivo .ova y las especificaciones de tu computadora.
 
-4. *Inicio de la máquina virtual:*
-   - Selecciona la máquina virtual en la lista y haz clic en "Iniciar" en la parte superior.
-   - La máquina virtual arrancará desde el ISO de PavOS y comenzará el proceso de instalación.
-
-5. *Instalación de PavOS:*
-   - Sigue las instrucciones en pantalla para instalar PavOS en el disco duro virtual creado anteriormente.
-   - Durante la instalación, se te pedirá que elijas el idioma, la distribución del teclado y otros ajustes.
-   - Una vez completada la instalación, reinicia la máquina virtual.
-
-6. *Inicio de PavOS:*
-   - Una vez reiniciada la máquina virtual, PavOS debería iniciarse automáticamente.
-   - Ingresa las credenciales de inicio de sesión (por defecto, usuario: root, contraseña: PavOS) para acceder al sistema operativo.
+### Paso 3: Iniciar la Máquina Virtual
+1. *Seleccionar la Máquina Virtual:* En el panel izquierdo de VirtualBox, selecciona la máquina virtual importada.
+2. *Iniciar la Máquina Virtual:* Haz clic en Iniciar en la parte superior del panel para arrancar la máquina virtual.
 
 ## Paso a paso del Sistema Operativo
-El sistema operativo PavOS fue creado siguiendo cada uno de los pasos que se encuentran en la guía que brinda el libro Linux From Scratch, en este caso se uso la versión 12.1, en el siguiente link se encuentra el mismo de forma online https://www.linuxfromscratch.org/lfs/view/12.1/
+El sistema operativo PavOS fue creado siguiendo cada uno de los pasos que se encuentran en la guía que brinda el libro Linux From Scratch, en este caso se uso la versión 12.1, en el siguiente link se encuentra de forma online https://www.linuxfromscratch.org/lfs/view/12.1/
 
 ## Notas de la versión
 - Versión: 1.0
