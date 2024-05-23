@@ -14,7 +14,7 @@ PavOS es un sistema operativo ligero basado en el kernel de Linux, diseñado par
 2. *Creación de una nueva máquina virtual:*
    - Abre VM VirtualBox y haz clic en el botón "Nueva" en la parte superior.
    - Ingresa un nombre para tu máquina virtual (por ejemplo, "PavOS") y selecciona el tipo de sistema operativo como "Linux".
-   - Elige la versión adecuada de Linux en la lista desplegable.
+   - Elige la versión adecuada de Linux en la lista desplegable (Gentoo).
    - Selecciona la cantidad de memoria RAM que deseas asignar a la máquina virtual.
    - Crea un disco duro virtual con un tamaño mínimo de 10 GB y elige el tipo adecuado según tus preferencias y recursos disponibles.
 
@@ -34,6 +34,9 @@ PavOS es un sistema operativo ligero basado en el kernel de Linux, diseñado par
 6. *Inicio de PavOS:*
    - Una vez reiniciada la máquina virtual, PavOS debería iniciarse automáticamente.
    - Ingresa las credenciales de inicio de sesión (por defecto, usuario: root, contraseña: PavOS) para acceder al sistema operativo.
+
+## Paso a paso del Sistema Operativo
+El sistema operativo PavOS fue creado siguiendo cada uno de los pasos que se encuentran en la guía que brinda el libro Linux From Scratch, en este caso se uso la versión 12.1, en el siguiente link se encuentra el mismo de forma online https://www.linuxfromscratch.org/lfs/view/12.1/
 
 ## Notas de la versión
 - Versión: 1.0
