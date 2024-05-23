@@ -16,14 +16,14 @@ PavOS es un sistema operativo ligero basado en el kernel de Linux, diseñado par
 
 ### Paso 2: Importar el Archivo .ova
 1. *Abrir VirtualBox:* Inicia VirtualBox desde el menú de inicio (Windows) o desde tu carpeta de aplicaciones (macOS, Linux).
-Acceder al Asistente de Importación: Haz clic en Archivo en la barra de menú y selecciona Importar servicio virtualizado....
-2. *Seleccionar el Archivo .ova:*
-- En la ventana del Asistente de Importación, haz clic en el icono de la carpeta para abrir el explorador de archivos.
-- Navega hasta la ubicación del archivo .ova en tu sistema, selecciona el archivo y haz clic en Abrir.
-3. *Iniciar la Importación:*
-- Después de seleccionar el archivo .ova, haz clic en Siguiente.
-- Revisa la configuración de la máquina virtual que se mostrará. Puedes ajustar los parámetros según tus necesidades.
-- Haz clic en Importar para comenzar el proceso de importación. Este proceso puede tardar varios minutos, dependiendo del tamaño del archivo .ova y las especificaciones de tu computadora.
+2. *Acceder al Asistente de Importación:* Haz clic en Archivo en la barra de menú y selecciona Importar servicio virtualizado....
+3. *Seleccionar el Archivo .ova:*
+  - En la ventana del Asistente de Importación, haz clic en el icono de la carpeta para abrir el explorador de archivos.
+  - Navega hasta la ubicación del archivo .ova en tu sistema, selecciona el archivo y haz clic en Abrir.
+4. *Iniciar la Importación:*
+  - Después de seleccionar el archivo .ova, haz clic en Siguiente.
+  - Revisa la configuración de la máquina virtual que se mostrará. Puedes ajustar los parámetros según tus necesidades.
+  - Haz clic en Importar para comenzar el proceso de importación. Este proceso puede tardar varios minutos, dependiendo del tamaño del archivo .ova y las especificaciones de tu computadora.
 
 ### Paso 3: Iniciar la Máquina Virtual
 1. *Seleccionar la Máquina Virtual:* En el panel izquierdo de VirtualBox, selecciona la máquina virtual importada.
