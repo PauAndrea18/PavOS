@@ -26,9 +26,18 @@ PavOS es un sistema operativo ligero basado en el kernel de Linux, diseñado par
     - Revisa la configuración de la máquina virtual que se mostrará. Puedes ajustar los parámetros según tus necesidades.
     - Haz clic en Importar para comenzar el proceso de importación. Este proceso puede tardar varios minutos, dependiendo del tamaño del archivo .ova y las especificaciones de tu computadora.
 
-### Paso 3: Iniciar la Máquina Virtual
+### Paso 3: Configuración del Adaptador de red
+    - Selecciona la maquina virtual en el panel izquierdo de VirtualBox.
+    - Haz click en Configuración en el panel derecho en la parte superior.
+    - Abre la configuración de Red en la ventana emergente.
+    - En la pestaña del Adaptador 1, verifica que la opción "Habilitar adaptador de red" este activada, en el subtitulo "Conectado a" selecciona NAT y haz click en Aceptar.
+
+### Paso 4: Iniciar la Máquina Virtual
 1. *Seleccionar la Máquina Virtual:* En el panel izquierdo de VirtualBox, selecciona la máquina virtual importada.
 2. *Iniciar la Máquina Virtual:* Haz clic en Iniciar en la parte superior del panel para arrancar la máquina virtual.
+3. Sigue las instrucciones del sistema operativo PavOS e inicia sesión con las siguientes credenciales
+       *PavOS login:* root
+       *Password:* PavOS
 
 ## Paso a paso del Sistema Operativo
 El sistema operativo PavOS fue creado siguiendo cada uno de los pasos que se encuentran en la guía que brinda el libro Linux From Scratch, en este caso se uso la versión 12.1, en el siguiente link se encuentra de forma online https://www.linuxfromscratch.org/lfs/view/12.1/
