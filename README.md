@@ -38,7 +38,7 @@ PavOS es un sistema operativo ligero basado en el kernel de Linux, diseñado par
 3. Sigue las instrucciones del sistema operativo PavOS e inicia sesión con las siguientes credenciales
 ```bash
 `PavOS login:` root
-*`Password:`* PavOS
+`Password:` PavOS
 ```
        
 ## Paso a paso del Sistema Operativo
