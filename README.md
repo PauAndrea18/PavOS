@@ -37,8 +37,8 @@ PavOS es un sistema operativo ligero basado en el kernel de Linux, diseñado par
 2. *Iniciar la Máquina Virtual:* Haz clic en Iniciar en la parte superior del panel para arrancar la máquina virtual.
 3. Sigue las instrucciones del sistema operativo PavOS e inicia sesión con las siguientes credenciales
 ```bash
-<code style="color: blue;">PavOS login:</code> root
-*´Password:´* PavOS
+`PavOS login:` root
+*`Password:`* PavOS
 ```
        
 ## Paso a paso del Sistema Operativo
